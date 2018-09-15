@@ -1,0 +1,42 @@
+html {
+	font-family: sans-serif;
+}
+
+* { /*盒模型解决 支持IE8+*/
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	border: none;
+	display: block;
+}
+
+Img, input, select, textarea {
+	vertical-align: middle;
+}
+
+ol, ul, li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.clearfloat {
+	zoom: 1; /*清除浮动、清除margin的重叠等。*/
+}
+
+.public_container {
+	margin: 0 auto;
+	width: 1200px;
+}
+
+/*为了布局时看清楚各DIV盒子的轮廓，页面完成后须删除*/
+body {
+	background: #eeeeee;
+}

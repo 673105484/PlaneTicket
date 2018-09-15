@@ -1,0 +1,417 @@
+.clearfix:after, .clearfix:before {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+.public_container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+ul, li {
+	list-style: none;
+}
+
+.header {
+	position: absolute;
+	width: 100%;
+	height: 80px;
+	background: rgba(0, 0, 0, 0.2);
+	z-index: 2;
+	top: 0;
+}
+
+.inner-head {
+	background: rgba(0, 0, 0, 0.4);
+	height: 80px;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.inner-head:hover {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.inner-head .log {
+	float: left;
+	line-height: 80px;
+	padding-left: 50px;
+}
+
+.inner-head .log a {
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.search {
+	width: 264px;
+	float: left;
+	margin: 24px 96px;
+}
+
+.search input {
+	border: 2px solid forestgreen;
+	width: 200px;
+	height: 30px;
+	padding-left: 8px;
+	outline: none;
+	float: left;
+	color: forestgreen;
+}
+
+.search button {
+	border: 0;
+	background: forestgreen;
+	width: 60px;
+	height: 30px;
+	float: left;
+	color: #fff;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+.search button:hover {
+	cursor: pointer;
+	color: deeppink;
+}
+
+.inner-head .nav {
+	float: right;
+	line-height: 80px; /*行高会继承*/
+}
+
+.inner-head .nav li {
+	float: left;
+	margin: 0 20px;
+}
+
+.nav li a {
+	color: #fff;
+}
+
+.nav li a:hover {
+	color: #2288f6;
+}
+/*banner*/
+.banner {
+	height: 500px;
+	width: 100%;
+	background: url(../img/banner.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+.b_center {
+	position: relative;
+	height: 500px;
+	z-index: 0;
+}
+
+.m_search {
+	width: 300px;
+	height: 190px;
+	background: rgba(0, 150, 0, 0.1);
+	position: absolute;
+	right: 100px;
+	bottom: 120px;
+	border-radius: 7px;
+	color: white;
+	font-size: 22px;
+	transition: .25s ease-in-out;
+	z-index: 99;
+}
+
+.m_search:hover {
+	background: rgba(0, 150, 0, 0.5);
+	cursor: pointer;
+}
+
+.m_search table {
+	margin-top: 50px;
+	margin-left: 8px;
+}
+
+.m_search input {
+	width: 180px;
+	height: 28px;
+	outline: none;
+	padding-left: 10px;
+}
+
+.m_search a {
+	margin-top: 10px;
+	display: inline-block;
+	text-align: center;
+	color: white;
+	margin-left: 50px;
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid white;
+}
+
+.m_search a:hover {
+	background: deeppink;
+}
+
+.service {
+	height: 660px;
+	margin-top: 180px;
+}
+
+.hd {
+	margin: 0 25px; /*没定宽，自动继承父亲 不会超出*/
+	border-top: 2px solid grey;
+}
+
+.hd .s-hd {
+	width: 180px;
+	height: 50px;
+	background: #eee;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0 auto;
+	color: grey;
+	margin-top: -24px;
+	margin-bottom: 15px;
+}
+
+.hd>p {
+	color: grey;
+	font-family: sans-serif;
+	font-size: 16px;
+	text-align: center;
+	line-height: 26px;
+}
+
+.bd {
+	margin-top: 40px;
+	overflow: hidden;
+}
+
+/*fffffffffffffffffff*/
+.flight_list {
+	background: grey;
+	padding-left: 50px;
+	padding-top: 50px;
+	color: #fff;
+	padding-bottom: 30px;
+	position: relative;
+}
+
+.flight_list h2 {
+	text-align: center;
+	font-weight: bold;
+}
+
+.flight_list a {
+	color: #fafafa;
+	text-decoration: none;
+	margin-left: 50px;
+}
+
+.flight_list a:hover {
+	color: red;
+	font-weight: bold;
+}
+
+.flight_list li {
+	text-align: center;
+	font-size: 20px;
+	line-height: 20px;
+}
+
+.admin {
+	border: 2px solid forestgreen;
+	border-radius: 8px;
+	margin: 50px auto;
+	width: 400px;
+	padding: 30px 30px;
+}
+
+.admin tr {
+	height: 38px;
+}
+
+.admin input {
+	width: 200px;
+	height: 30px;
+	outline: none;
+	padding-left: 5px;
+	color: forestgreen;
+}
+
+.admin a {
+	color: deeppink;
+	text-decoration: none;
+}
+
+.admin a:hover {
+	color: red;
+}
+
+.sb {
+	border: 2px forestgreen solid;
+	background: #fafafa;
+	color: #fff;
+	font-size: 18px;
+}
+
+.sb:hover {
+	background: forestgreen;
+	color: #fff;
+	cursor: pointer;
+}
+
+.buy_list {
+	background: grey;
+	padding-left: 50px;
+	padding-top: 50px;
+	color: #fff;
+	padding-bottom: 30px;
+	position: relative;
+}
+
+.buy_list h2 {
+	text-align: center;
+	font-weight: bold;
+}
+
+.buy_list a {
+	color: #fafafa;
+	text-decoration: none;
+	margin-left: 50px;
+}
+
+.buy_list a:hover {
+	color: red;
+	font-weight: bold;
+}
+
+.buy_list li {
+	text-align: center;
+	font-size: 20px;
+	line-height: 20px;
+}
+
+.buy_list input {
+	border: 1px solid forestgreen;
+	width: 120px;
+	height: 60px;
+	background: forestgreen;
+	position: absolute;
+	right: 50px;
+	bottom: 2px;
+	outline: none;
+	border-radius: 8px;
+}
+
+.buy_list input:hover {
+	cursor: pointer;
+	background: green;
+}
+
+.info {
+	width: 340px;
+	height: 510px;
+	background: grey;
+	float: left;
+	padding-left: 50px;
+	padding-top: 50px;
+	color: #fff;
+}
+
+.info_middle {
+	margin: 0 90px;
+}
+
+.case_wrap {
+	margin-top: 10px;
+	width: 100%;
+	background: #fafafa;
+	padding-top: 20px;
+	overflow: hidden;
+}
+
+.case {
+	margin-top: 80px;
+}
+
+.lunbo ul {
+	
+}
+
+.lunbo ul li {
+	height: 253px;
+	width: 385px;
+	float: left;
+	position: relative;
+}
+
+.li_cen {
+	margin: 0 22px;
+}
+
+.inner-div {
+	position: absolute;
+	height: 50px;
+	width: 385px;
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 20px;
+	line-height: 50px;
+	text-align: center;
+	bottom: 0;
+	left: 0;
+}
+
+.mask {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.3) url(../img/1.jpg) center no-repeat;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.lunbo li:hover .mask {
+	display: block;
+	cursor: pointer;
+}
+
+.footer {
+	margin-top: 100px;
+	height: 300px;
+	background: black;
+	overflow: hidden;
+	color: #fff;
+}
+
+.in_f {
+	margin-top: 140px;
+	text-align: center;
+	font-size: 24px;
+}
+
+.in_f a {
+	text-decoration: none;
+	color: #fff;
+	padding: 0 12px;
+}
+
+.footer p {
+	margin-top: 16px;
+	text-align: center;
+}
